@@ -53,9 +53,8 @@ class reservationController extends Controller
             "adultsGuests" => ["required"],
         ]);
         $cli = Client::where([
-            ["firstname",  $request->firstname],
-            ["lastname",  $request->lastname],
             ["phoneNumber",  $request->phoneNumber],
+            ["email", $request->email],
             ["country",  $request->country],
         ])->first();
         if($cli){
@@ -65,7 +64,8 @@ class reservationController extends Controller
                 "firstname" => $request->firstname,
                 "lastname" => $request->lastname,
                 "phoneNumber" => $request->phoneNumber,
-                "country" => $request->country 
+                "country" => $request->country,
+                "email" => $request->email
             ]);
         }
         $res = null;

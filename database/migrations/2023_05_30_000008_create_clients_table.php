@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string("lastname");
             $table->string("phoneNumber");
             $table->string('country');
+            $table->string('email');
         });
     }
 

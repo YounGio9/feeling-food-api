@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('typeOfMeal');
-            $table->date('reservationDate');
+            $table->string('reservationDate');
             $table->integer('childrenGuests');
             $table->integer("adultsGuests");
             $table->string("phoneNumber");

@@ -14,5 +14,6 @@ class Client extends Model
     'lastname',
     'phoneNumber',
     'country',
+    'email'
     ];
 }
