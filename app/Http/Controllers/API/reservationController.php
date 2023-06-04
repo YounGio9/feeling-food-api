@@ -22,7 +22,8 @@ class reservationController extends Controller
             array_push($retour_, [
                 "reservationTime" => $reservation->reservationTime,
                 "reservationDate" => $reservation->reservationDate,
-                "numberOfGuests" => $reservation->childrenGuests+$reservation->adultsGuests
+                "numberOfGuests" => $reservation->childrenGuests+$reservation->adultsGuests,
+                "client" => $reservation->firstname.' '.$reservation->lastname
             ]);
         }
         return response()->json([

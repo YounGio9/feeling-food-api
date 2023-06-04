@@ -19,7 +19,7 @@ return new class extends Migration
             $table->date('reservationDate');
             $table->integer('childrenGuests');
             $table->integer("adultsGuests");
-            $table->bigInteger("phoneNumber");
+            $table->string("phoneNumber");
             $table->string('country');
             $table->string('options')->nullable();
             $table->string('reservationTime', 5);

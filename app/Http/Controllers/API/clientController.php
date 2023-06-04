@@ -21,7 +21,9 @@ class clientController extends Controller
                 "firstname" => $client->firstname,
                 "lastname" => $client->lastname,
                 "phoneNumber" => $client->phoneNumber,
-                "country" => $client->country
+                "country" => $client->country,
+                "email" => $client->email
+
             ]);
         }
         return response()->json([
